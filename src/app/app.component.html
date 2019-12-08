@@ -1,0 +1,19 @@
+<div class="top-menu">
+
+    <img class="logo"
+         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
+</div>
+
+<!-- <h1>{{rxjsCourse.description}}</h1> -->
+<!-- <div>Start Date: {{startDate | date: 'MMM/dd/yyyy' }}</div> -->
+
+<div class="courses">
+    <course-card #cardRef *ngFor="let course of courses"
+       (courseSelected)="onCourseSelected($event)"[course]="course">
+    </course-card>
+   
+   
+</div>
+
+
